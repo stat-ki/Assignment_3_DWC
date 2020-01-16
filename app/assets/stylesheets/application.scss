@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -20,4 +21,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.btn-info, .btn-success {
+    color: #666;
 }
