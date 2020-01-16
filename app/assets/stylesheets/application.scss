@@ -23,6 +23,32 @@
     box-sizing: border-box;
 }
 
-.btn-info, .btn-success {
+a {
+    text-decoration: none;
+}
+
+a:visited {
     color: #666;
+}
+
+a:hover, a:focus {
+    color: #23527c;
+    background-color: black;
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.top-signin, .top-signup {
+    color: #666;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+#new_user {
+    margin-bottom: 10px;
 }
