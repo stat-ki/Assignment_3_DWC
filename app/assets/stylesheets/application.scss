@@ -17,12 +17,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 }
@@ -37,8 +31,26 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-.container {
-    margin: 0 auto;
+p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.glyphicon {
+    font-weight: normal;
+}
+
+header {
+    color: white;
+}
+
+header .navbar-left span {
+    font-size: 20px;
+    padding-top: 10px;
+}
+.body {
+    margin-top: 51px;
 }
 
 .top-signin, .top-signup {
