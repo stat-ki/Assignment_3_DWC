@@ -1,4 +1,30 @@
-<h2>Title</h2>
-<%= @book.title %>
-<%= @book.body %>
-<%= @book.user_id %>
+<%= render('users/user_form', user:@user, book:@new_book) %>
+<div class="col-xs-9">
+	<h2>Book detail</h2>
+	<table class="table">
+	    <tbody>
+            <tr>
+                <td>
+                    <%= link_to(user_path(@book.user)) do %>
+                            <%= attachment_image_tag(@user, :profile_image, :fill, 30, 30, fallback: "no_image.jpg") %>
+                            <br><%= @user.name %>
+                    <% end %> 
+                </td>
+                <td>
+                    <%= link_to(@book.title, book_path) %>
+                </td>
+                <td>
+                    <%= @book.body %>
+                </td>
+                <% if @user == current_user %>
+                    <td>
+                        <%= link_to("Edit", edit_book_path, class: "btn-sm btn-success") %>
+                    </td>
+                    <td>
+                        <%= link_to("Destroy", book_path, method: :delete, class: "btn-sm btn-danger", data: {confirm: "Are you sure?"}) %>
+                    </td>
+                <% end %>
+    </tr>
+    </tbody>
+    </table>
+</div>

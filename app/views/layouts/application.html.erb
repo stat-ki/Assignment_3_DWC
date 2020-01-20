@@ -38,7 +38,7 @@
               <%= link_to(" About", home_about_path, class:"glyphicon glyphicon-link about") %>
             </li>
             <li>
-              <%= link_to(" sign up", new_user_registration_path, class:"glyphicon glyphicon-edit sign_up") %>
+              <%= link_to(" Sign up", new_user_registration_path, class:"glyphicon glyphicon-edit sign_up") %>
             </li>
             <li>
               <%= link_to(" login", new_user_session_path, class:"glyphicon glyphicon-log-in sign_in") %>
@@ -51,7 +51,9 @@
   <div class="body">
     <div class="container">
       <p class="notice"><%= notice %></p>
-      <%= yield %>
+      <div class="row">
+        <%= yield %>
+      </div>
     </div>
   </div>    
   </body>

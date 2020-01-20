@@ -1,4 +1,14 @@
 <h2>User info</h2>
+<% if @user.errors.any? %>
+    <div class="error_explanation">
+        <h3 class><%= @user.errors.count %> errors prohibited this obj from being saved:</h3>
+        <ul>
+            <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
+<% end %>
 <%= form_for(@user) do |f| %>
     <label for="user_name">Name</label>
     <%= f.text_field :name, autofocus: true %>
