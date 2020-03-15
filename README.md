@@ -1,24 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# About
+This repository is a part of assignments for first month of DMM WEB CAMP.  
+In this section, created a posting application which have user registration function with Ruby on Rails.
+# Demo
+<img src="https://user-images.githubusercontent.com/59187251/76701449-8c52fb00-6704-11ea-8099-d9712dae98fc.gif" width="600" height="300">
